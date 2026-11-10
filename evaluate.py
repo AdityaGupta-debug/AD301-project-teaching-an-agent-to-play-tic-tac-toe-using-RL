@@ -46,3 +46,5 @@ if __name__ == "__main__":
     parser.add_argument("--seed", type=int, default=123)
     args = parser.parse_args()
     evaluate(args.games, args.seed)
+
+
