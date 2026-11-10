@@ -46,6 +46,7 @@ def train(episodes=50000, seed=42, report_every=1000):
 
         reward = 1.0 if winner == learner_player else (-1.0 if winner == -learner_player else 0.0)
 
+
         # Update the learner's decisions backwards. Intermediate rewards are
         # zero; only the final transition receives the terminal outcome.
         for index in range(len(transitions) - 1, -1, -1):

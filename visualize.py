@@ -172,3 +172,4 @@ if __name__ == "__main__":
         self_play(trained_agent, max(1, args.games))
     else:
         human_play(trained_agent)
+
